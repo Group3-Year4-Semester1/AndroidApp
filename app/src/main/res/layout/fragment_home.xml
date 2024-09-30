@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/grey">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/focusLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_my_location"
+        android:contentDescription="Location"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/focusVehicle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_vehicle"
+        android:contentDescription="Vehicle Location"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/focusDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="155dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/ic_direction"
+        android:contentDescription="Direction"/>
+
+    <!-- LinearLayout to hold Latitude and Longitude pairs -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true">
+
+        <!-- Latitude Pair -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lat:      "
+                android:textColor="@color/mapboxBlue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.000000"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <!-- Longitude Pair -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long:   "
+                android:textColor="@color/mapboxBlue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.000000"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+
+        <!-- Status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:   "
+                android:textColor="@color/mapboxBlue"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

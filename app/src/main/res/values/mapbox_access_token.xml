@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="MAPBOX_DOWNLOADS_TOKEN" translatable="false" tools:ignore="UnusedResources">sk.eyJ1IjoidGFvdGhhbzEyMCIsImEiOiJjbTFuazNqdHkwNzl2MmpzZjFsbzcxdWU5In0.G28f8lOWWpO9JFNFU62j3Q</string>
+</resources>

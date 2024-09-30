@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/grey"
+    tools:context=".fragment.Update_profile_fragment">
+
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/profile_image"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:src="@drawable/ic_my_profile"-->
+<!--        app:civ_border_width="3dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:civ_border_color="#FF000000"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Information"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_my_profile" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="User Name"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_location" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_calendar" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DoB: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Date of birth"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_phone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_sos" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SoS Phone: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_sosphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="SOS Phone number"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vehicle Information"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_vehicle" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle name"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_brand" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brand: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="vehicle brand"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_color" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Color: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle color"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_card" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="License: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_license"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="License Number"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_description" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description: "
+            android:textStyle="italic"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle description"
+            android:textStyle="bold"
+            android:layout_marginStart="4dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Information"
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Mapbox Maven repository
+        // Mapbox Maven repository
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username "mapbox"
+                password = "sk.eyJ1IjoidGFvdGhhbzEyMCIsImEiOiJjbTFuazNqdHkwNzl2MmpzZjFsbzcxdWU5In0.G28f8lOWWpO9JFNFU62j3Q"
+            }
+        }
+
+
+
+
+    }
+}
+
+rootProject.name = "Android_Group3"
+include ':app'
